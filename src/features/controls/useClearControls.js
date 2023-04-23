@@ -4,7 +4,7 @@ import { clearControls } from './controlSlice';
 export const useClearControls = () => {
   const dispatch = useDispatch();
 
-  const clearAllControls = () => dispatch(clearControls);
+  const clearAllControls = () => dispatch(clearControls());
 
   return clearAllControls;
 };
